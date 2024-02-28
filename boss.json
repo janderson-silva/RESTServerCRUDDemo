@@ -1,0 +1,13 @@
+{
+	"name": "boss install",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.1.6",
+		"github.com/hashload/jhonson": "^1.1.8",
+		"github.com/viniciussanchez/dataset-serialize": "^v2.5.6"
+	}
+}
