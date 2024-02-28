@@ -15,6 +15,6 @@ uses
 
 begin
   THorse.Use(Jhonson());
-  //controller.foto.Registry;
+  controller.pessoa.Registry;
   THorse.Listen(9000);
 end.
