@@ -78,7 +78,7 @@ begin
 
       // Buscar dados da conexão...
       FConn.Params.Values['DriverID'] := ini.ReadString('Database', 'DriverID', 'FB');
-      FConn.Params.Values['Database'] := ini.ReadString('Database', 'Database', GetCurrentDir + '\UPLOADFOTO.FDB');
+      FConn.Params.Values['Database'] := ini.ReadString('Database', 'Database', GetCurrentDir + '\SERVERAPI.FDB');
       FConn.Params.Values['User_name'] := ini.ReadString('Database', 'User_name', 'sysdba');
       FConn.Params.Values['Password'] := ini.ReadString('Database', 'Password', 'masterkey');
       FConn.Params.Values['Port'] := ini.ReadString('Database', 'Port', '3050');

@@ -1,4 +1,4 @@
-program ServerAPI;
+program ServerREST;
 
 {$APPTYPE CONSOLE}
 
@@ -16,5 +16,13 @@ uses
 begin
   THorse.Use(Jhonson());
   controller.pessoa.Registry;
-  THorse.Listen(9000);
+  THorse.Listen(9000,
+                procedure
+                begin
+                  Writeln('Serviço executando na porta ' + THorse.Port.ToString);
+                  Writeln('');
+                  Write('Pressione Enter para parar');
+                  Readln;
+                  THorse.StopListen;
+                end);
 end.
